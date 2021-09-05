@@ -1,5 +1,8 @@
 # fake-word
 
+author: WUCH
+Data: 2020
+
 ## Project setup
 ```
 npm install
