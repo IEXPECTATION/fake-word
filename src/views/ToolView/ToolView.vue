@@ -5,7 +5,7 @@
         <div class="fixed-option">
           <div class="option-item">
             <!-- <button @click="sayHi"></button> -->
-            <button @click="sayHi"><span>文件</span></button>
+            <button @mouseenter="bold" @mouseleave="normal" ><span>文件</span></button>
           </div>
         </div>
         <div class="variable-option">
@@ -93,9 +93,13 @@
 export default {
   name: "ToolView",
   methods: {
-    sayHi() {
-      window.alert("Hi!");
+    bold() {
+      console.log("bold");
+      console.log(this.$refs);
     },
+    normal() {
+      console.log("normal");
+    }
   },
 };
 </script>
@@ -136,9 +140,7 @@ export default {
   outline: none;
   border: none;
   height: 100%;
-}
-.option-item button:hover  {
-  font-size: 600;
+  width: 100%;
 }
 .fixed-option span {
   font-size: 14px;
