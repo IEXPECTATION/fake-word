@@ -1,8 +1,5 @@
 # fake-word
 
-@author: WUCH
-@data: 2020-09-07
-
 ## About
 
 This demo project is my first Vue project. The reason I wrote it is to consolidate my knowledge. Of course, the main purpose is tvhat shows my knowledge level to HR.
