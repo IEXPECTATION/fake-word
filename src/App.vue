@@ -1,18 +1,19 @@
 <template>
-  <tittle-view DocumentName="Document" />
+  <tittle-view />
   <tool-view />
-
+  <writing-view />
 </template>
 
 <script>
 import TittleView from "./views/TittleView/TittleView.vue";
 import ToolView from "./views/ToolView/ToolView.vue";
-
+import WritingView from "./views/WritingView/WritingView.vue";
 export default {
   name: "App",
   components: {
     TittleView,
     ToolView,
+    WritingView,
   },
 };
 </script>

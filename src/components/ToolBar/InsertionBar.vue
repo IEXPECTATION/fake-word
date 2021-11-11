@@ -1,12 +1,13 @@
 <template>
-  <p>reference tool bar</p>
+  <p>insertion tool bar</p>
 </template>
 
 <script>
 export default {
-  name: "ReferenceBar",
+  name: "InsertionBar",
 };
 </script>
 
 <style>
+
 </style>

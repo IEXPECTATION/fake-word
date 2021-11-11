@@ -1,5 +1,5 @@
 <template>
-  <div class="StartBar"></div>
+  <p>start tool bar</p>
 </template>
 
 <script>
@@ -9,7 +9,4 @@ export default {
 </script>
 
 <style>
-.StartBar {
-  width: 100%;
-}
 </style>

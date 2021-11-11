@@ -4,8 +4,10 @@
       <button @click="SwitchSoftware">ICON</button>
     </div>
     <div class="software-name">Word</div>
-    <div class="document-name">{{ DocumentName }}</div>
-    <div class="document-search">ICON</div>
+    <div class="document-name" @click="changeDocumentname">
+      {{ DocumentName }}
+    </div>
+    <div class="document-search">Search Bar</div>
     <div class="user-picture">ICON</div>
   </div>
 </template>
@@ -13,10 +15,17 @@
 <script>
 export default {
   name: "TittleView",
-  props: ["DocumentName"],
+  data() {
+    return {
+      DocumentName: "Document",
+    };
+  },
   methods: {
     SwitchSoftware() {
-      window.alert("Hello!");
+      console.log("SwitchSoftware");
+    },
+    changeDocumentname() {
+      console.log("changeDocumentname");
     },
   },
 };
@@ -30,8 +39,10 @@ export default {
   background-color: #185abd;
 }
 .software-switch {
-  flex: 1;
-  padding: 14px 5px;
+  width: 48px;
+  padding-top: 12px;
+}
+.software-switch:hover {
   background-color: #1651aa;
 }
 .software-switch button {
@@ -39,23 +50,32 @@ export default {
   outline: none;
   border: none;
 }
+
 .software-name {
-  flex: 1;
-  padding: 14px 5px;
-  font-size: 16px;
+  padding-top: 13px;
+  padding-left: 8px;
+  padding-right: 12px;
   font-weight: 600;
+  font-size: 16px;
 }
+
 .document-name {
-  flex: 5;
-  padding: 14px 10px;
+  width: 400px;
+  padding-top: 14px;
+  padding-left: 11px;
+  font-size: 14px;
   text-align: left;
 }
+.document-name:hover {
+  background-color: #1651aa;
+  cursor: pointer;
+}
 .document-search {
-  flex: 1;
-  padding: 14px 5px;
+  width: 800px;
+  padding-left: 10px;
 }
 .user-picture {
-  flex: 1;
-  padding: 14px 5px;
+  width: 48px;
+  padding-left: 152px;
 }
 </style>
